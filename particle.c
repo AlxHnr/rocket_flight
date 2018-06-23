@@ -5,8 +5,8 @@ void init_particles(particle *particle_array, int elements, int x, int y, int w,
   int particle_counter = 0;
   while(particle_counter < elements)
   {
-    particle_array[particle_counter].x = x + rand() % w + 1;
-    particle_array[particle_counter].y = y + rand() % h + 1;
+    particle_array[particle_counter].x = x + rand() % (w + 1);
+    particle_array[particle_counter].y = y + rand() % (h + 1);
     particle_array[particle_counter].dest_x = x;
     particle_array[particle_counter].dest_y = y + h;
     particle_counter++;
